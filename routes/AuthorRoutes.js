@@ -7,7 +7,7 @@ router.post("/",async(req,res)=>{
 
     const {name}=req.body;
     if(!name){
-       res.status(400).json({
+      return res.status(400).json({
          msg:"name is missing",
       })
     }
